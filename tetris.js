@@ -22,7 +22,7 @@ var canvas = document.getElementById("can");
 
 var ctx = canvas.getContext("2d");
 
-
+document.addEventListener("keypress")
 
 // this function will provide us the number corresponding to the next piece to draw 
 // taking into consideration the position of each piece we will have 19 number
@@ -315,163 +315,10 @@ function clearRect(){
 
 
 function pieceDownfall(){
-    
-
-    switch(pieceNumber){
-
-        case 0:
-    
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 1:
-     
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-        
-        break
-        case 2:
-     
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 3:
-     
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 4:
-    
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 5:
-     
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 6:
-      
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 7:
-     
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 8:
-        
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 9:
-     
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 10:
-
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-          
-        break
-        case 11:
-  
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-          
-        break
-        case 12:
-      
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 13:
-       
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 14:
-       
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 15:
-       
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 16:
-   
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 17:
-  
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-        case 18:
-
-          y1 = y1 + 20
-          y2 = y2 + 20
-          y3 = y3 + 20
-          y4 = y4 + 20
-
-        break
-    }
+    y1 = y1 + 20
+    y2 = y2 + 20
+    y3 = y3 + 20
+    y4 = y4 + 20
 }
 
 
