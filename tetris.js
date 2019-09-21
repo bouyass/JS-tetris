@@ -320,7 +320,7 @@ function pieceDownfall(){
     switch(pieceNumber){
 
         case 0:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+    
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -328,15 +328,15 @@ function pieceDownfall(){
 
         break
         case 1:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+     
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
           y4 = y4 + 20
-          console.log("piece "+ pieceNumber +" m "+ y4)
+        
         break
         case 2:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+     
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -344,7 +344,7 @@ function pieceDownfall(){
 
         break
         case 3:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+     
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -352,7 +352,7 @@ function pieceDownfall(){
 
         break
         case 4:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+    
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -360,7 +360,7 @@ function pieceDownfall(){
 
         break
         case 5:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+     
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -368,7 +368,7 @@ function pieceDownfall(){
 
         break
         case 6:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+      
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -376,7 +376,7 @@ function pieceDownfall(){
 
         break
         case 7:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+     
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -384,7 +384,7 @@ function pieceDownfall(){
 
         break
         case 8:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+        
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -392,7 +392,7 @@ function pieceDownfall(){
 
         break
         case 9:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+     
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -400,15 +400,15 @@ function pieceDownfall(){
 
         break
         case 10:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
           y4 = y4 + 20
-          console.log("piece "+ pieceNumber +" m "+ y4)
+          
         break
         case 11:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+  
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -416,7 +416,7 @@ function pieceDownfall(){
           
         break
         case 12:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+      
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -424,7 +424,7 @@ function pieceDownfall(){
 
         break
         case 13:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+       
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -432,7 +432,7 @@ function pieceDownfall(){
 
         break
         case 14:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+       
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -440,7 +440,7 @@ function pieceDownfall(){
 
         break
         case 15:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+       
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -448,7 +448,7 @@ function pieceDownfall(){
 
         break
         case 16:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+   
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -456,7 +456,7 @@ function pieceDownfall(){
 
         break
         case 17:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+  
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
@@ -464,7 +464,7 @@ function pieceDownfall(){
 
         break
         case 18:
-        console.log("piece "+ pieceNumber +" m "+ y4)
+
           y1 = y1 + 20
           y2 = y2 + 20
           y3 = y3 + 20
