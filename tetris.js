@@ -32,7 +32,8 @@ function randomPiece(){
     console.log("la prochaine pièce "+ pieceNumber)
 }
 
-function drawRect(){
+
+function drawFirstRect(){
 
     switch(pieceNumber){
         case 0:
@@ -295,6 +296,13 @@ function drawRect(){
 
 }
 
+function drawRect(){
+    ctx.fillRect(x1,y1,width,height)
+    ctx.fillRect(x2,y2,width,height)
+    ctx.fillRect(x3,y3,width,height)
+    ctx.fillRect(x4,y4,width,height)
+}
+
 function clearRect(){
 
         ctx.clearRect(x1,y1,width,height)
@@ -305,23 +313,178 @@ function clearRect(){
 
 }
 
+
+function pieceDownfall(){
+    
+
+    switch(pieceNumber){
+
+        case 0:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 1:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+          console.log("piece "+ pieceNumber +" m "+ y4)
+        break
+        case 2:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 3:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 4:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 5:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 6:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 7:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 8:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 9:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 10:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+          console.log("piece "+ pieceNumber +" m "+ y4)
+        break
+        case 11:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+          
+        break
+        case 12:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 13:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 14:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 15:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 16:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 17:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+        case 18:
+        console.log("piece "+ pieceNumber +" m "+ y4)
+          y1 = y1 + 20
+          y2 = y2 + 20
+          y3 = y3 + 20
+          y4 = y4 + 20
+
+        break
+    }
+}
+
+
 randomPiece()
-drawRect()
+drawFirstRect()
 
-
-
-
-
-/*setInterval(function(){
+setInterval(function(){
     
     if ( y4 < 400){
     clearRect()
-    y1 = y1 + 20
-    y2 = y2 + 20
-    y3 = y3 + 20
-    y4 = y4 + 20
+    pieceDownfall()
     drawRect()
     }
     
-},1000)*/
+},1000)
 
