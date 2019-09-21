@@ -14,6 +14,8 @@ const height = 20
 
 var pieceNumber = 0
 
+var piecePos = 0
+
 var gameOver = false
 
 var fillLine = 30
@@ -22,7 +24,7 @@ var canvas = document.getElementById("can");
 
 var ctx = canvas.getContext("2d");
 
-document.addEventListener("keypress")
+document.addEventListener("keypress", userInteractions)
 
 // this function will provide us the number corresponding to the next piece to draw 
 // taking into consideration the position of each piece we will have 19 number
@@ -47,6 +49,8 @@ function drawFirstRect(){
           y3 = 40
           y4 = 60
 
+          piecePos = 0
+   
           ctx.fillStyle = 'green';
         break
         case 1:
@@ -59,6 +63,8 @@ function drawFirstRect(){
           y2 = 00
           y3 = 00
           y4 = 00
+
+          piecePos = 1
 
           ctx.fillStyle = 'green';
         break
@@ -321,6 +327,51 @@ function pieceDownfall(){
     y4 = y4 + 20
 }
 
+
+function pieceRotation(){
+    switch(pieceNumber){
+        case 0:
+           if (piecePos === 0){
+              x2 = x1 +20
+              x3 = x1 +20
+              x4 = x2 +20
+
+              y2 = y1
+              y3 = y1
+              y4 = y1
+
+              piecePos = 1
+           }else{
+              x2 = x1 
+              x3 = x1 
+              x4 = x2 
+
+              y2 = y1 +20
+              y3 = y1 +20
+              y4 = y1 +20
+             
+              piecePos = 0
+           }
+        break
+        case 1:
+           if(piecePos === 1){
+
+           }else{
+
+           }
+        break
+        
+
+    }
+}
+
+function userInteractions(event){
+    var code = event.keyCode
+    console.log(code)
+    if (code  === 38 ){
+        pieceRotation()
+    }
+}
 
 randomPiece()
 drawFirstRect()
