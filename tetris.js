@@ -14,6 +14,8 @@ const height = 20
 
 var pieceNumber = 0
 
+var downFallSpeed = 20
+
 var piecePos = 0
 
 var gameOver = false
@@ -25,6 +27,7 @@ var canvas = document.getElementById("can");
 var ctx = canvas.getContext("2d");
 
 document.addEventListener("keypress", userInteractions)
+document.addEventListener('keyup',keyupHandler)
 
 // this function will provide us the number corresponding to the next piece to draw 
 // taking into consideration the position of each piece we will have 19 number
@@ -80,6 +83,8 @@ function drawFirstRect(){
           y4 = 40
 
           ctx.fillStyle = 'red';
+
+          piecePos = 0
         break
         case 3:
           x1 = 280
@@ -93,6 +98,9 @@ function drawFirstRect(){
           y4 = 20
 
           ctx.fillStyle = 'red';
+
+          piecePos = 1
+
         break
         case 4:
           x1 = 320
@@ -106,6 +114,8 @@ function drawFirstRect(){
           y4 = 40
 
           ctx.fillStyle = 'red';
+
+          piecePos = 2
         break
         case 5:
           x1 = 280
@@ -119,6 +129,9 @@ function drawFirstRect(){
           y4 = 20
 
           ctx.fillStyle = 'red';
+
+          piecePos = 3
+
         break
         case 6:
           x1 = 300
@@ -321,57 +334,124 @@ function clearRect(){
 
 
 function pieceDownfall(){
-    y1 = y1 + 20
-    y2 = y2 + 20
-    y3 = y3 + 20
-    y4 = y4 + 20
+    y1 = y1 + downFallSpeed
+    y2 = y2 + downFallSpeed
+    y3 = y3 + downFallSpeed
+    y4 = y4 + downFallSpeed
 }
 
 
 function pieceRotation(){
+    clearRect()
     switch(pieceNumber){
         case 0:
            if (piecePos === 0){
-              x2 = x1 +20
-              x3 = x1 +20
-              x4 = x2 +20
+              x1 = x2 + 20
+              x3 = x2 - 20
+              x4 = x2 - 40
 
-              y2 = y1
-              y3 = y1
-              y4 = y1
+              y1 = y2 
+              y3 = y2
+              y4 = y2
 
               piecePos = 1
            }else{
-              x2 = x1 
-              x3 = x1 
+              x1 = x2 
+              x3 = x2 
               x4 = x2 
 
-              y2 = y1 +20
-              y3 = y1 +20
-              y4 = y1 +20
+              y1 = y2 - 20
+              y3 = y2 + 20
+              y4 = y2 + 40
              
               piecePos = 0
            }
         break
         case 1:
-           if(piecePos === 1){
+         
+            if (piecePos === 0){
+              x1 = x2 + 20
+              x3 = x2 - 20
+              x4 = x2 - 40
 
+              y1 = y2 
+              y3 = y2
+              y4 = y2
+
+              piecePos = 1
            }else{
+              x1 = x2 
+              x3 = x2 
+              x4 = x2 
 
+              y1 = y2 - 20
+              y3 = y2 + 20
+              y4 = y2 + 40
+             
+              piecePos = 0
            }
+       
         break
+        case 2:
+         switch(piecePos){
+           case 0:
+              x1 = x2 +20
+              y1 = y2 +20
+              x3 = x2 -20
+              y3 = y2  
+              x4 = y2 -20
+              y4 = y2 -20
+
+              piecePos = 1
+           break
+           case 1:
+           break
+           case 2:
+           break
+           case 3:
+           break
+         }
         
 
     }
+    drawRect()
 }
 
 function userInteractions(event){
     var code = event.keyCode
     console.log(code)
     if (code  === 38 ){
+        
         pieceRotation()
+        
+    }else if( code === 37){
+        clearRect()
+        x1 = x1 - 20
+        x2 = x2 - 20
+        x3 = x3 - 20
+        x4 = x4 - 20
+        drawRect()
+    }else if( code === 39){
+        clearRect()
+        x1 = x1 + 20
+        x2 = x2 + 20
+        x3 = x3 + 20
+        x4 = x4 + 20
+        drawRect()
+    }else{
+        downFallSpeed+= 1
+        console.log(event)
     }
 }
+
+
+function keyupHandler(event){
+  if (event.keyCode === 40){
+    downFallSpeed-=1
+  }
+}
+
+
 
 randomPiece()
 drawFirstRect()
